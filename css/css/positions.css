@@ -1,0 +1,45 @@
+.p-static {
+    width: 200px;
+    height: 200px;
+    background-color: #e54545;
+    position: static;
+
+}
+
+.p-relative {
+    width: 300px;
+    height: 300px;
+    background-color: #28c960;
+    position: relative;
+
+}
+
+.child-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #e54545;
+    position: absolute;
+    z-index: 1;
+    
+    
+   
+}
+
+.child-2 {
+    width: 110px;
+    height: 110px;
+    background-color: #b8bab7;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.p-absolute {
+    width: 200px;
+    height: 200px;
+    background-color: #181818;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+}
