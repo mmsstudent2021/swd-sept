@@ -14,14 +14,28 @@
 
 }
 
+
+.p-absolute {
+    width: 200px;
+    height: 200px;
+    background-color: #181818;
+    color: aliceblue;
+    position: absolute;
+    margin-top: 50px;
+
+}
+
+
 .child-1 {
     width: 100px;
     height: 100px;
     background-color: #e54545;
     position: absolute;
     z-index: 1;
-    
-    
+    right: 0;
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
    
 }
 
@@ -31,15 +45,8 @@
     background-color: #b8bab7;
     position: relative;
     z-index: 2;
+    top:50px
+   
     
-}
-
-
-.p-absolute {
-    width: 200px;
-    height: 200px;
-    background-color: #181818;
-    color: aliceblue;
-    position: absolute;
-    bottom: 0;
+    
 }
