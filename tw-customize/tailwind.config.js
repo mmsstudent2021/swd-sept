@@ -9,6 +9,10 @@ module.exports = {
         'primary': '#2e22e4',
         'secondary': '#dd7fef',
         'accent': '#e94ed6',
+      },
+      fontFamily : {
+        'noto-mm' : ["Noto Serif Myanmar",'san-serif'],
+        'poppins' :[ "Poppins",'san-serif']
       }
     },
   },

@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,29 +556,34 @@ video {
   display: none;
 }
 
-.h-32 {
+.h-32{
   height: 8rem;
 }
 
-.h-screen {
+.h-screen{
   height: 100vh;
 }
 
-.w-32 {
+.w-32{
   width: 8rem;
 }
 
-.bg-background {
+.bg-background{
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 254 / var(--tw-bg-opacity));
 }
 
-.bg-secondary {
+.bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(221 127 239 / var(--tw-bg-opacity));
 }
 
-.text-secondary {
+.font-poppins{
+  font-family: Poppins, san-serif;
+}
+
+.text-secondary{
   --tw-text-opacity: 1;
   color: rgb(221 127 239 / var(--tw-text-opacity));
 }
+
