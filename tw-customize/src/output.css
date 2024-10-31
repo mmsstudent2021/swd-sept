@@ -554,7 +554,29 @@ video {
   display: none;
 }
 
-.text-red-500 {
+.h-32 {
+  height: 8rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 254 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 127 239 / var(--tw-bg-opacity));
+}
+
+.text-secondary {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(221 127 239 / var(--tw-text-opacity));
 }
