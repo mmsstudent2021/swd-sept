@@ -30,6 +30,10 @@ const themes = {
 
 console.log(Object.keys(themes));
 
+//Cart Function
+
+const button = document.getElementById("btn");
+
 const cart = [
   {
     name: "Apple",
@@ -50,7 +54,7 @@ const cart = [
 
 const showCart = (cartItems) => {
   cartItems.forEach((item) => {
-    console.log(`Product: ${item.name},${item.price}. ${item.quantity}`);
+    console.log(`Product: \n name : ${item.name}, \n price : ${item.price}, \n quantity : ${item.quantity}`);
   });
 };
 
@@ -61,40 +65,52 @@ const calculateTotal = (cartItems) => {
   );
 };
 
+
 const addToCart = (cartItems, product) => {
   cartItems.push(product);
 };
 
-const promptForNewProduct = () => {
-  const name = prompt("Enter Product name");
-  console.log(name);
-  if (!name) return null;
-
-  const price = prompt("Enter Price");
-  console.log(price);
-  if (!price) return null;
-
-  const quantity = prompt("Enter Quantity");
-  console.log(quantity);
-  if (!quantity) return null;
-
-  return { name, price, quantity };
-};
 
 console.log("CartItems");
 showCart(cart);
 
 let total = calculateTotal(cart);
-console.log(`Total Price: ${total}`);
+console.log(`Total Price: ${total} MMK`);
 
-const newProduct = promptForNewProduct();
-if (newProduct) {
-  console.log("Adding to cart");
-  addToCart(cart, newProduct);
 
-  console.log("Updated Cart");
-  console.log(cart);
+// Add to Cart Fucntion 
 
-  total = calculateTotal(cart);
-  console.log(`Updated Total : ${total}`);
-}
+const promptForNewProduct = () => {
+  const name = prompt("Enter Product name");
+  if (!name) return null;
+
+  const price = prompt("Enter Price");
+  if (isNaN(price) || price <= 0){
+    alert("စာသေချာထည့်")
+    return null
+  };
+
+  const quantity = prompt("Enter Quantity");
+  if (isNaN(quantity) || price <= 0){
+    alert("စာသေချာထည့်")
+    return null
+  };
+
+
+  return { name, price, quantity };
+};
+
+
+button.addEventListener("click", () => {
+  const newProduct = promptForNewProduct();
+  if (newProduct) {
+    console.log("Adding to cart");
+    addToCart(cart, newProduct);
+
+    console.log("Updated Cart");
+    console.log(cart);
+
+    total = calculateTotal(cart);
+    console.log(`Updated Total : ${total} MMK`);
+  }
+});
